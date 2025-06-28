@@ -17,31 +17,28 @@
       background-color: #e6d4ec;
       padding: 2rem 1rem;
     }
-    h1 {
-      font-size: 2rem;
-      color: #743f7d;
-    }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
+    h1 { font-size: 2rem; color: #743f7d; }
+    p { font-size: 1.1rem; margin-bottom: 1.5rem; }
+
     .catalogos {
       display: flex;
       flex-direction: column;
       gap: 2rem;
       padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
+
     .marca {
       background-color: #f9f4fb;
       border-radius: 10px;
       padding: 1rem;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      text-align: left;
     }
-    .marca img {
-      max-width: 160px;
-      height: auto;
-      margin-bottom: 0.5rem;
-    }
+
+    .marca h2 { margin: 0; font-size: 1.3rem; }
+    .marca p { margin: 0.5rem 0; font-size: 0.95rem; color: #555; }
     .marca a {
       display: inline-block;
       margin-top: 0.5rem;
@@ -52,32 +49,26 @@
       font-weight: bold;
       transition: 0.3s;
     }
-    .apice a { background-color: #a564b6; }
-    .apice a:hover { background-color: #86429a; }
 
+    /* Botões coloridos e hover */
+    .apice a    { background-color: #a564b6; }
+    .apice a:hover    { background-color: #86429a; }
     .embaixador a { background-color: #003366; }
     .embaixador a:hover { background-color: #002244; }
-
     .barbours a { background-color: #7B1E3F; }
     .barbours a:hover { background-color: #5c1430; }
-
-    .mohave a { background-color: #D2691E; }
-    .mohave a:hover { background-color: #a45315; }
-
-    .aura a { background-color: #40E0D0; color: #333; }
-    .aura a:hover { background-color: #2bbcbc; color: #111; }
-
-    .kokeshi a { background-color: #B22222; }
-    .kokeshi a:hover { background-color: #7a1414; }
-
-    .beyoung a { background-color: #FF1493; }
-    .beyoung a:hover { background-color: #cc116f; }
-
-    .vhita a { background-color: #2E8B57; }
-    .vhita a:hover { background-color: #246b43; }
-
-    .fator5 a { background-color: #D32F2F; }
-    .fator5 a:hover { background-color: #a52727; }
+    .mohave a    { background-color: #D2691E; }
+    .mohave a:hover    { background-color: #a45315; }
+    .aura a     { background-color: #40E0D0; color: #333; }
+    .aura a:hover     { background-color: #2bbcbc; color: #111; }
+    .kokeshi a  { background-color: #B22222; }
+    .kokeshi a:hover  { background-color: #7a1414; }
+    .beyoung a  { background-color: #FF1493; }
+    .beyoung a:hover  { background-color: #cc116f; }
+    .vhita a    { background-color: #2E8B57; }
+    .vhita a:hover    { background-color: #246b43; }
+    .fator5 a   { background-color: #D32F2F; }
+    .fator5 a:hover   { background-color: #a52727; }
 
     footer {
       background-color: #e6d4ec;
@@ -98,47 +89,56 @@
   <section class="catalogos">
 
     <div class="marca apice">
-      <img src="https://drive.google.com/uc?export=view&id=1Vv5cYi9_-wuPNi0H4hW4sPJA6sBJeKHW" alt="Ápice Cosméticos" />
+      <h2>Ápice Cosméticos</h2>
+      <p>Marca vegana e cruelty‑free especializada em produtos No/Low Poo para cabelos crespos, cacheados e naturais 💜 1</p>
       <a href="https://vendah.com.br/collections/apice-cosmeticos?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Ápice</a>
     </div>
 
     <div class="marca embaixador">
-      <img src="https://drive.google.com/uc?export=view&id=1VNKCy_VHApSgG-C5cPBaMCiS5jMm92EC" alt="O Embaixador" />
+      <h2>O Embaixador</h2>
+      <p>Linha masculina pensada para barba, cabelo e corpo, com pomadas, leave-ins e grooming para barbearias 💈 2</p>
       <a href="https://vendah.com.br/collections/embaixador?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Embaixador</a>
     </div>
 
     <div class="marca barbours">
-      <img src="https://drive.google.com/uc?export=view&id=1VJKXwsa9WiLqz5__62wg-IQuiM3iIfOB" alt="Barbour's Beauty" />
+      <h2>Barbour's Beauty</h2>
+      <p>Produto de linha profissional focado em finalização de cabelo, com produtos para brilho intenso e definição 3</p>
       <a href="https://vendah.com.br/collections/barbours-beauty?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Barbour's</a>
     </div>
 
     <div class="marca mohave">
-      <img src="https://drive.google.com/uc?export=view&id=1VgCgxM2ezSwXMqUGn18B8WJmjo70q5gV" alt="Mohave Cosmetics" />
+      <h2>Mohave Cosmetics</h2>
+      <p>Conhecida por kits de finalização como o "Always Liss", ideal para um acabamento liso e profissional 4</p>
       <a href="https://vendah.com.br/collections/mohave-cosmetics?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Mohave</a>
     </div>
 
     <div class="marca aura">
-      <img src="https://drive.google.com/uc?export=view&id=1VY1O7HcyEXovSqDPegjX-PVahLrwfDyx" alt="Aura Beauty" />
+      <h2>Aura Beauty</h2>
+      <p>Marca de perfumaria e cuidados femininos, com fragrâncias marcantes como a linha "Venus Love" 🌸 5</p>
       <a href="https://vendah.com.br/collections/aura-beauty?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Aura</a>
     </div>
 
     <div class="marca kokeshi">
-      <img src="https://drive.google.com/uc?export=view&id=1W1X3vYDv_UKoPAZr_9F-mQgpx906Hgxs" alt="Kokeshi" />
+      <h2>Kokeshi</h2>
+      <p>Cuidados com pele e maquiagem: produtos como demaquilantes e cuidados faciais estão em destaque 6</p>
       <a href="https://vendah.com.br/collections/kokeshi?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Kokeshi</a>
     </div>
 
     <div class="marca beyoung">
-      <img src="https://drive.google.com/uc?export=view&id=1VXgI1OIjYl4VTrnzerMhwrzpCn2DJrBv" alt="Beyoung" />
+      <h2>Beyoung</h2>
+      <p>Marca com produtos multifuncionais de maquiagem, bem feminina e vibrante 7</p>
       <a href="https://vendah.com.br/collections/beyoung?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Beyoung</a>
     </div>
 
     <div class="marca vhita">
-      <img src="https://drive.google.com/uc?export=view&id=1VOfVJHQcsdV7dNH_DoumZuh3cHSMjVIc" alt="Vhita" />
+      <h2>Vhita</h2>
+      <p>Suplementos e produtos de bem-estar, com proposta natural e voltada ao autocuidado 💚 8</p>
       <a href="https://vendah.com.br/collections/vhita?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Vhita</a>
     </div>
 
     <div class="marca fator5">
-      <img src="https://drive.google.com/uc?export=view&id=1VXjOJgHMNij0MFDPIp6oUUdo1n2f8_Jp" alt="Fator 5" />
+      <h2>Fator 5</h2>
+      <p>Linha com fragrâncias e cosméticos de destaque, com lançamentos recentes bem marcantes 9</p>
       <a href="https://vendah.com.br/collections/fator-5?r=monica.aparecida.de.sousa.oliv" target="_blank">Ver Catálogo Fator 5</a>
     </div>
 
@@ -149,4 +149,4 @@
     Feito com carinho 💜
   </footer>
 </body>
-        </html>
+</html>
